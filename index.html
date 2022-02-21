@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Artful Coding Grades</title>
+  </head>
+
+  <body>
+    <h1>Welcome to the Artful Coding Grading Frontend Prototype</h1>
+    <!-- Our form to input the credentials -->
+    <!-- Instead of pointing the browser to some URL in the action property,
+         the getGrades functions should be called to handle the request -->
+    <div class="login-form">
+      <br>
+      <form action="javascript:getGrades()">
+        Student ID: <br><input id="student" type="text"><br>
+        Password: <br><input id="password" type="password"><br>
+        <input class="button" type="submit" value="Go!">
+      </form>
+    </div>
+    
+    <div class="container-grades">
+      <h2>Hey <span id="name"></span>!</h2>
+      <!-- Here we'll just put the whole response data -->
+      <!-- Full result: -->
+      <div class="full-result">
+        <p style="margin-right: 3em;"><b>Total points: </b><span id="totalpoints"></span></p>
+        <p><b>Current grade: </b><span id="currentgrade"></span></p>
+      </div>
+      
+      <!-- Breakdown of Points -->
+
+      <!-- Attendance -->
+      <div id="accordion">
+        <div class="head">
+            <h2>Attendance - total: <span id="attendance-total"></span></h2>
+            <p class="arrow">&#8964;</p>
+        </div>
+        <div class="progress">
+          <div class="bar" id="progbar-attendance"></div>
+        </div>
+        <div class="content" id="attendance">
+        </div>
+      </div>
+
+      <!-- Exercises -->
+      <div id="accordion">
+        <div class="head">
+          <h2>Exercises - total: <span id="exercise-total"></span></h2>
+          <p class="arrow">&#8964;</p>
+        </div>
+        <div class="progress">
+          <div class="bar" id="progbar-exercise"></div>
+        </div>
+        <div class="content" id="exercise">
+        </div>
+      </div>
+
+      <!-- Final Project -->
+      <div id="accordion">
+        <div class="head">
+          <h2>Final Project - total: <span id="final_project-total"></span></h2>
+          <p class="arrow">&#8964;</p>
+        </div>
+        <div class="progress">
+          <div class="bar" id="progbar-final_project"></div>
+        </div>
+        <div class="content" id="final_project">
+        </div>
+      </div>
+
+      <!-- Reviews -->
+      <div id="accordion">
+        <div class="head">
+          <h2>Reviews - total: <span id="reviews-total"></span></h2>
+          <p class="arrow">&#8964;</p>
+        </div>
+        <div class="progress">
+          <div class="bar" id="progbar-reviews"></div>
+        </div>
+        <div class="content" id="reviews">
+        </div>
+      </div>
+
+    </div>
+    
+    <div class="foot">
+      <script src="https://code.jquery.com/jquery-3.6.0.js" 
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+      crossorigin="anonymous"></script>
+      <script src="main.js"></script>
+    </div>
+  </body>
+</html>

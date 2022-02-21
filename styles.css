@@ -1,0 +1,89 @@
+/* primary: #e7f - secondary: #239892  */
+html {
+    font-family: monospace;
+    color: #e7f;
+    background-color: rgb(16, 23, 25);
+}
+body {
+    width: 80%;
+    margin: 4em auto;
+    font-size: 1.7em;
+}
+h1 {
+    color: #239892;
+}
+input {
+    padding-left: 0.5em;
+    border: none;
+    height: 2em;
+    width: 17em;
+    margin: 0.5em 0em;
+    font-size: 0.8em;
+    background-color: rgb(29, 43, 45);
+    color: #239892;
+}
+.button {
+    width: 21.5em;
+    height: 2.7em;
+    font-family: monospace;
+    border: none;
+    background-color: #239892;
+    color: rgb(16, 23, 25);
+}
+.button:hover {
+    background-color: #e7f;
+}
+
+/* top container for full result */
+.full-result {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    border: 1px solid #e7f;
+    padding: 0em 1em;
+    margin-bottom: 1em;
+}
+.full-result p {
+    color: #239892;
+}
+
+/* container for grades */
+.container-grades {
+    display: none;
+}
+.comment {
+    color: #239892;
+}
+/* Accordion */
+.head {
+    background-color: rgb(29, 43, 45);
+    /* width: 60%; */
+    padding: 0.5em 2em;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    /* margin-bottom: 1em; */
+}
+.head:hover {
+    background-color: #1e8681;
+}
+.content {
+    padding: 0.7em;
+    display: none;
+}
+.arrow {
+    font-weight: bold;
+}
+/* Progress Bar */
+.progress {
+    width: 100%;
+    background-color: rgb(29, 43, 45);
+  }
+  
+.bar {
+    display: none;
+    /* width: 1%; */
+    height: 5px;
+    background-color: #239892;
+    margin-bottom: 1em;
+}
