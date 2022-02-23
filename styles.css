@@ -1,4 +1,12 @@
 /* primary: #e7f - secondary: #239892  */
+@media screen and (max-width: 460px) {
+   input {
+       width: 100%;
+   }
+   .button {
+       width: 100%;
+   }
+}
 html {
     font-family: monospace;
     color: #e7f;
@@ -21,6 +29,13 @@ input {
     font-size: 0.8em;
     background-color: rgb(29, 43, 45);
     color: #239892;
+}
+footer {
+   border-top: 1px dotted darkgray;
+   padding-top: .5em;
+   margin-top: 3em;
+   font-size: 0.7em;
+   opacity: .6;
 }
 .button {
     width: 21.5em;
