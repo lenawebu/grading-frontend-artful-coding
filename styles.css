@@ -1,12 +1,4 @@
 /* primary: #e7f - secondary: #239892  */
-@media screen and (max-width: 460px) {
-   input {
-       width: 100%;
-   }
-   .button {
-       width: 100%;
-   }
-}
 html {
     font-family: monospace;
     color: #e7f;
@@ -47,6 +39,14 @@ footer {
 }
 .button:hover {
     background-color: #e7f;
+}
+@media screen and (max-width: 460px) {
+    input {
+        width: 100%;
+    }
+    .button {
+        width: 100%;
+    }
 }
 
 /* top container for full result */
