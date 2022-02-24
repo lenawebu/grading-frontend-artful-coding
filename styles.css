@@ -1,12 +1,4 @@
 /* primary: #e7f - secondary: #239892  */
-@media screen and (max-width: 460px) {
-   input {
-       width: 100%;
-   }
-   .button {
-       width: 100%;
-   }
-}
 html {
     font-family: monospace;
     color: #e7f;
@@ -20,6 +12,17 @@ body {
 h1 {
     color: #239892;
 }
+a {
+    color: #239892;
+}
+a:visited {
+    color: #237872;
+}
+a:active,
+a:hover {
+    color: #23B8B2;
+}
+
 input {
     padding-left: 0.5em;
     border: none;
@@ -47,6 +50,14 @@ footer {
 }
 .button:hover {
     background-color: #e7f;
+}
+@media screen and (max-width: 460px) {
+    input {
+        width: 100%;
+    }
+    .button {
+        width: 100%;
+    }
 }
 
 /* top container for full result */
